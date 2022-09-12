@@ -2,10 +2,8 @@
     used library: beatifulsoup, request, unicodata???
 """
 
-import os
 import requests
 from bs4 import BeautifulSoup
-import pandas
 from lxml import etree as et
 import csv
 from sending_email import send_email
