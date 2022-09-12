@@ -9,10 +9,11 @@ def send_email(message):
     port = 465  # used for  ssl
     smtp_server = "smtp.gmail.com"
 
-    sender_email = 'tankhanhdao@gmail.com'
-    password = "mtfcxgrclwosouqg"
+    sender_email = config('EMAIL_ADDRESS')
+    password = config('PASSWORD')
 
-    receiver_emails =  ['tankhanhf7@gmail.com', 'tan.dao@sjsu.edu']
+
+    receiver_emails =  ['tankhanhf7@gmail.com']
     msg = EmailMessage()
     msg.set_content(message)
     msg['From'] = sender_email
