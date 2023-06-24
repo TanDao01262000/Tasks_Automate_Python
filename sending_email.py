@@ -12,7 +12,6 @@ def send_email(message):
     sender_email = config('EMAIL_ADDRESS')
     password = config('PASSWORD')
 
-
     receiver_emails =  ['tankhanhf7@gmail.com']
     msg = EmailMessage()
     msg.set_content(message)
